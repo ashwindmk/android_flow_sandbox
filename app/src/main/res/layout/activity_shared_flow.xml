@@ -5,29 +5,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".sharedflow.SharedFlowActivity"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:paddingTop="96dp">
 
     <TextView
+        android:id="@+id/timer_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Flows!"
+        android:text="Hello Shared Flow!"
+        android:layout_marginBottom="36dp" />
+
+    <Button
+        android:id="@+id/start_flow_button"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:text="START FLOW"
         android:layout_marginBottom="24dp" />
 
     <Button
-        android:id="@+id/test_flow_button"
+        android:id="@+id/stop_flow_button"
         android:layout_width="192dp"
         android:layout_height="wrap_content"
-        android:text="TEST FLOW"
-        android:layout_marginBottom="24dp" />
-
-    <Button
-        android:id="@+id/state_flow_button"
-        android:layout_width="192dp"
-        android:layout_height="wrap_content"
-        android:text="STATE FLOW"
+        android:text="STOP FLOW"
         android:layout_marginBottom="24dp" />
 
     <Button
@@ -37,4 +38,10 @@
         android:text="SHARED FLOW"
         android:layout_marginBottom="24dp" />
 
+    <Button
+        android:id="@+id/replay_cache_button"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:text="REPLAY CACHE"
+        android:layout_marginBottom="24dp" />
 </LinearLayout>
