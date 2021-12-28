@@ -8,7 +8,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import com.ashwin.android.flowsandbox.databinding.ActivityStateFlowBinding
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.cancel
 import kotlinx.coroutines.flow.collect
 
 class StateFlowActivity : AppCompatActivity() {
